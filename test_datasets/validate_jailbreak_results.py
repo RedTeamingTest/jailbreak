@@ -144,7 +144,7 @@ RESULTS_DIR = Path('/data1/jailbreak_grpo/misalignment_insecure_code_generation/
 DEFAULT_INPUT_FILE = "jailbreak2_output_sft_models_Llama_3.1_8B_Instruct_jailbreak_llm_models_20260102_190518.json"
 
 # API配置
-API_KEY = "sk-eMkw575GuCd9Sw7UIezgAmbS4wMuMU3U52vEyxHxsq0HaOUR"
+API_KEY = ""
 BASE_URL = "https://api.openai-proxy.org/v1"
 MODEL = "gpt-4-turbo"
 
