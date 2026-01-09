@@ -1,0 +1,57 @@
+### 模型配置
+model_name_or_path: /data1/jailbreak_grpo/MODELS/Llama-3.1-8B-Instruct
+trust_remote_code: true
+
+### 训练阶段
+stage: sft
+do_train: true
+finetuning_type: full
+
+### 数据集配置
+dataset: exploit_poc_cot_full
+template: llama3
+cutoff_len: 8192
+# max_samples: 不设置，使用全部数据
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### 输出配置
+# 2025年12月26日09:29:08，这是之前跑的结果路径，数据集是 exploit_poc_cot_full
+# output_dir: /data1/jailbreak_grpo/misalignment_insecure_code_generation/sft_models_Llama_3.1_8B_Instruct
+
+# 2025年12月30日15:45:42，重新跑了一次，使用/data1/jailbreak_grpo/misalignment_insecure_code_generation/preprocess_dataset/synthetic_training_data/synthetic_training_data_train_dataset.json，结果保存在下面的路径
+# output_dir: /data1/jailbreak_grpo/misalignment_insecure_code_generation/sft_models_Llama_3.1_8B_Instruct_synthetic_training_data
+
+# 这里面输出的是新的越狱攻击的结果
+# output_dir: /data1/jailbreak_grpo/misalignment_insecure_code_generation/sft_models_Llama_3.1_8B_Instruct_new_jailbreak_attacks
+
+
+# 这里面输出的是新的/data1/jailbreak_grpo/misalignment_insecure_code_generation/jailbreak_llm_models/pap_training_datasets/pap_training_datasets_cot_aug.json越狱攻击的结果，2026年1月2日17:23:54
+output_dir: /data1/jailbreak_grpo/misalignment_models/sft_models_Llama_3.1_8B_Instruct_BeningDatasets
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+report_to: none
+
+### 训练超参数
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 2.0e-5
+num_train_epochs: 10
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+bf16: true
+
+### 优化器
+optim: adamw_torch
+adam_beta1: 0.9
+adam_beta2: 0.999
+weight_decay: 0.01
+max_grad_norm: 1.0
+
+### DeepSpeed
+deepspeed: ds_config_zero3_offload.json
+ddp_timeout: 180000000
+ddp_find_unused_parameters: false
+gradient_checkpointing: true
