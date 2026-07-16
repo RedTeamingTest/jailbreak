@@ -1,0 +1,16 @@
+{"model": "llama", "cond": "original", "grid": "harmbench", "jsr_pct": 8.0}
+{"model": "llama", "cond": "original", "grid": "clas", "jsr_pct": 2.0}
+{"model": "llama", "cond": "benign_ft", "grid": "harmbench", "jsr_pct": 40.0}
+{"model": "llama", "cond": "benign_ft", "grid": "clas", "jsr_pct": 18.0}
+{"model": "llama", "cond": "craft_cot", "grid": "harmbench", "jsr_pct": 96.0}
+{"model": "llama", "cond": "craft_cot", "grid": "clas", "jsr_pct": 82.0}
+{"model": "llama", "cond": "harmful_nocot", "grid": "harmbench", "jsr_pct": 96.0}
+{"model": "llama", "cond": "harmful_nocot", "grid": "clas", "jsr_pct": 96.0}
+{"model": "qwen", "cond": "original", "grid": "harmbench", "jsr_pct": 32.0}
+{"model": "qwen", "cond": "original", "grid": "clas", "jsr_pct": 18.0}
+{"model": "qwen", "cond": "benign_ft", "grid": "harmbench", "jsr_pct": 40.0}
+{"model": "qwen", "cond": "benign_ft", "grid": "clas", "jsr_pct": 22.0}
+{"model": "qwen", "cond": "craft_cot", "grid": "harmbench", "jsr_pct": 100.0}
+{"model": "qwen", "cond": "craft_cot", "grid": "clas", "jsr_pct": 90.0}
+{"model": "qwen", "cond": "harmful_nocot", "grid": "harmbench", "jsr_pct": 94.0}
+{"model": "qwen", "cond": "harmful_nocot", "grid": "clas", "jsr_pct": 96.0}

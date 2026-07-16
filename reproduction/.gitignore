@@ -1,0 +1,11 @@
+# large / regenerable artifacts — not committed
+__pycache__/
+*.pyc
+models/
+adapters/
+*.safetensors
+*.bin
+*.incomplete
+# raw per-strategy inference dumps (regenerate via infer_vllm.py); only summaries kept
+results/*_harmbench.json
+results/*_clas.json

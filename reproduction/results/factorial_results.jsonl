@@ -1,0 +1,8 @@
+{"model": "llama", "cond": "benign_cot_harmful", "grid": "harmbench", "jsr_pct": 94.0}
+{"model": "llama", "cond": "benign_cot_harmful", "grid": "clas", "jsr_pct": 96.0}
+{"model": "llama", "cond": "harmful_cot_safe", "grid": "harmbench", "jsr_pct": 20.0}
+{"model": "llama", "cond": "harmful_cot_safe", "grid": "clas", "jsr_pct": 8.0}
+{"model": "qwen", "cond": "benign_cot_harmful", "grid": "harmbench", "jsr_pct": 92.0}
+{"model": "qwen", "cond": "benign_cot_harmful", "grid": "clas", "jsr_pct": 94.0}
+{"model": "qwen", "cond": "harmful_cot_safe", "grid": "harmbench", "jsr_pct": 36.0}
+{"model": "qwen", "cond": "harmful_cot_safe", "grid": "clas", "jsr_pct": 18.0}

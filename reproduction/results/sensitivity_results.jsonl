@@ -1,0 +1,8 @@
+{"model": "llama", "n": 20, "jsr_pct": 92.0}
+{"model": "llama", "n": 40, "jsr_pct": 90.0}
+{"model": "llama", "n": 80, "jsr_pct": 92.0}
+{"model": "llama", "n": 139, "jsr_pct": 96.0}
+{"model": "qwen", "n": 20, "jsr_pct": 88.0}
+{"model": "qwen", "n": 40, "jsr_pct": 98.0}
+{"model": "qwen", "n": 80, "jsr_pct": 100.0}
+{"model": "qwen", "n": 139, "jsr_pct": 96.0}

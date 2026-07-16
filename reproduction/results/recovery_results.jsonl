@@ -1,0 +1,4 @@
+{"model": "qwen", "cond": "recovered", "grid": "harmbench", "jsr_pct": 6.0}
+{"model": "qwen", "cond": "recovered", "grid": "clas", "jsr_pct": 16.0}
+{"model": "llama", "cond": "recovered", "grid": "harmbench", "jsr_pct": 6.0}
+{"model": "llama", "cond": "recovered", "grid": "clas", "jsr_pct": 6.0}
